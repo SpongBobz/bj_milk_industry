@@ -1,0 +1,87 @@
+
+@w: 1920/100vw;
+@h: 1080/100vh;
+.home {
+  .ant-tabs-bar{
+    margin: 0;
+  }
+  .ant-tabs-nav .ant-tabs-tab {
+    height: 52px ;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px 16px;
+  }
+}
+.but-group,.button-list {
+  .ant-btn-round {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .ant-btn-primary {
+    background-color: #464646;
+    border-color: #6e6e6e;
+  }
+}
+.button-list {
+  .ant-btn-round {
+    font-weight: bold;
+    font-size: 30/@h;
+    height: 50/@h;
+    padding: 0 20px;
+    
+
+  }
+  .ant-btn-primary {
+    background-color: #464646;
+    border-color: #6e6e6e;
+  }
+}
+// .box-4 {  
+//   text-align: left; 
+//     height: 132px;
+//     padding: 12px 4px;  
+//   .video-player {
+//     display: inline-block;
+//     margin-left: 4px;
+//   }
+//   .video-js {
+//     width: 94px !important;
+//     height: 66px !important;
+    
+//   }
+//   .video-js .vjs-big-play-button {
+//     height: 50px !important;
+//     width: 70px !important;
+//   }
+//   .vjs-control-bar {
+//     display: none;
+//   }
+// } 
+
+// 覆盖弹窗样式
+.ant-modal {
+  height: 100%;
+  top: 0px !important;  
+  width: 100% !important;
+  padding: 0 !important;
+  .ant-modal-content {
+    background-color: #15161Add;
+    height: 100%;
+    .ant-modal-close {
+      color: #fff;
+      top: 32/@h;
+      right: 56/ @w;
+      .ant-modal-close-x {
+        font-size: 50/ @w;
+      }
+    }
+    .ant-modal-body {
+      color: #fff;
+      padding: 0 ; 
+    }
+    .ant-modal-header {
+      display: none;
+    }
+  }
+}
+

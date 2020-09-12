@@ -1,0 +1,30 @@
+@w: 1920/100vw;
+@h: 1080/100vh;
+/* 定义滚动条样式 圆角和阴影不需要则传入null */
+.scrollBar(@width: 6px, @height: 10px, @outColor: #0E0E10, @innerColor: #A8A8A8, @radius: 2px) {
+  /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+  &::-webkit-scrollbar {
+      width: @width;
+      height: @height;
+      background-color: @outColor;
+  }
+
+  /*定义滚动条轨道 内阴影+圆角*/
+  &::-webkit-scrollbar-track {
+      // @if (@shadow!=null) {
+      //     -webkit-box-shadow: @shadow;
+      // }
+      border-radius: @radius;
+      background-color: @outColor;
+  }
+
+  /*定义滑块 内阴影+圆角*/
+  &::-webkit-scrollbar-thumb {
+      // @if (@shadow!=null) {
+      //     -webkit-box-shadow: @shadow;
+      // }
+      border-radius: @radius;
+      background-color: @innerColor;
+      border: 1px solid @innerColor;
+  }
+}
